@@ -1,0 +1,47 @@
+.sprite {
+	background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+
+
+.li {
+    position: inline;
+}
+
+.sprite-sprite_c {
+    width: 52px;
+    height: 50px;
+    background-position: -5px -5px;
+}
+
+.sprite-sprite_cpp {
+    width: 63px;
+    height: 58px;
+    background-position: -67px -5px;
+}
+
+.sprite-sprite_css {
+    width: 52px;
+    height: 53px;
+    background-position: -5px -73px;
+}
+
+.sprite-sprite_js {
+    width: 61px;
+    height: 51px;
+    background-position: -67px -73px;
+}
+
+.sprite-sprite_php {
+    width: 53px;
+    height: 61px;
+    background-position: -140px -5px;
+}
+
+.sprite-sprite_xhtml {
+    width: 62px;
+    height: 61px;
+    background-position: -138px -76px;
+}

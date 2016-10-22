@@ -996,8 +996,8 @@ div#portfolioModal10 {
     background: rgba(0, 0, 0, 0.55);
 }
 .team-gd img {
-    width: 80%;
-    border-bottom: 9px solid rgba(0, 0, 0, 0.81);
+    width: 60%;
+    border: 2px solid rgb(238, 238, 239);
 }
 /*-- portfolio --*/
 
