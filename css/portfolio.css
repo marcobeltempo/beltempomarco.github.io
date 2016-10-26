@@ -1,0 +1,107 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+
+/*----------------------------
+	Green filter bar
+-----------------------------*/
+
+
+#filter {
+	display: block;
+	height: 39px;
+	margin: 55px auto;
+	position: relative;
+	width: 600px;
+	text-align:center;
+	font-decoration: bold;
+	
+}
+
+#filter:before, #filter:after {
+	height: 43px;
+	position: absolute;
+	top: 0;
+	width: 78px;
+	content: '';
+
+}
+
+#filter:before {
+	background-position: 0 -47px;
+	left: -78px;
+	
+}
+
+#filter:after {
+	background-position: 0 0;
+	right: -78px;
+
+}
+
+#filter a{
+	color: black;
+	display: inline-block;
+	height: 39px;
+	margin-right: 15px;
+	line-height: 37px;
+	padding: 0 15px;
+	-webkit-box-shadow: 0px 0px 0px 4px rgba(0, 167, 124, 1);
+	-moz-box-shadow: 0px 0px 0px 4px rgba(0, 167, 124, 1);
+	box-shadow: 0px 0px 0px 4px rgba(0, 167, 124, 1);
+}
+
+#filter a:hover{
+	text-decoration:none;
+}
+
+#filter a.active{
+	-webkit-box-shadow: 0px 0px 0px 4px rgbA (255, 255, 153, 1);
+-moz-box-shadow: 0px 0px 0px 4px rgba(255, 255, 153, 1);
+box-shadow: 0px 0px 0px 4px rgba(255, 255, 153, 1);
+
+text-decoration:none;
+				}
+
+
+/*----------------------------
+	Content area
+-----------------------------*/
+
+
+#container1{
+	display:block;
+	overflow:hidden;
+	width: 830px;
+	margin:0 auto;
+}
+
+#container1 li{
+
+	float: left;
+	height: 96px;
+	list-style: none outside none;
+	margin: 6px;
+	position: relative;
+	width: 125px;
+	
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+}
+
+#container1 ul{
+	overflow:hidden;
+}
+
+#container1 ul.hidden{
+	display:none;
+}
+
