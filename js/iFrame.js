@@ -1,13 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>title</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-      <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-  </head>
+  //Iframe open and close control
+  $(document).ready(function () {
+    $(".popup").hide();
+    $(".openpop").click(function (e) {
+        e.preventDefault();
+        $("iframe").attr("src", $(this).attr('href'));
+        $(".links").fadeOut('slow');
+        $(".popup").fadeIn('slow');
+    });
+
+    $(".iframeClose").click(function () {
+        $(this).parent().fadeOut("slow");
+        $(".links").fadeIn("slow");
+    });
+});
+
   <style>
-.close {
+.iframeClose {
 	-moz-box-shadow:inset 0px 24px 0px -24px #e67a73;
 	-webkit-box-shadow:inset 0px 24px 0px -24px #e67a73;
 	box-shadow:inset 0px 24px 0px -24px #e67a73;
@@ -32,7 +40,7 @@
 	text-decoration:none;
 	text-shadow:0px 1px 0px #b23e35;
 }
-.close:hover {
+.iframeClose:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eb675e), color-stop(1, #e4685d));
 	background:-moz-linear-gradient(top, #eb675e 5%, #e4685d 100%);
 	background:-webkit-linear-gradient(top, #eb675e 5%, #e4685d 100%);
@@ -42,7 +50,7 @@
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eb675e', endColorstr='#e4685d',GradientType=0);
 	background-color:#eb675e;
 }
-.close:active {
+.iframeClose:active {
 	position:relative;
 	top:1px;
 }
@@ -57,39 +65,3 @@ iframe {
 }
 
   </style>
-  <script>
-  $(document).ready(function () {
-    $(".popup").hide();
-    $(".openpop").click(function (e) {
-        e.preventDefault();
-        $("iframe").attr("src", $(this).attr('href'));
-        $(".links").fadeOut('slow');
-        $(".popup").fadeIn('slow');
-    });
-
-    $(".close").click(function () {
-        $(this).parent().fadeOut("slow");
-        $(".links").fadeIn("slow");
-    });
-});
-  </script>
-  <body>
-  
-  
-  <div class="links">
-<a class="openpop" href="http://zenit.senecac.on.ca:11550/cgi-bin/assign1/assign1.php">Link 1</a>
-</div>
-<div class="wrapper">
-    <div class="popup" display:block>
-        <iframe src="" >
-            <p>Your browser does not support iframes.</p>
-        </iframe>
-<a href="#" class="close">Close</a>
-
-    </div>
-</div>
-  
-  
-  
-  </body>
-</html>
