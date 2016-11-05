@@ -1,3 +1,4 @@
+
 	/*.tabs {
 		margin: 30px 0 0 0;
 	}
@@ -129,6 +130,15 @@
 
 
 */
+
+.traitList {
+	
+	font-size:18px;
+	color:white;
+	font-weight:bold;
+	list-style: none
+	
+}
 	
 	.bar_group {
 	    position: relative;
