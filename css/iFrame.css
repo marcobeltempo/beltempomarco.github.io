@@ -43,6 +43,6 @@ iframe {
     display: block;       /* iframes are inline by default */
     background: white;
     border: dott;         /* Reset default border */
-    height: 80vh;        /* Viewport-relative units */
-    width: 90vw;
+    height: 75vh;        /* Viewport-relative units */
+    width: 100vw;
 }

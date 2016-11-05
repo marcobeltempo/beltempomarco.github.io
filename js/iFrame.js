@@ -9,7 +9,14 @@
     });
 
     $(".iframeClose").click(function () {
+	
         $(this).parent().fadeOut("slow");
         $(".links").fadeIn("slow");
+	
+		
     });
+	$(".iframeClose").click(function(e) {
+     doSomething();
+     return false;
+});
 });
