@@ -1335,6 +1335,9 @@ span.border.two:after {
         min-height: 650px;
         padding: 4em 0 0em 0;
     }
+    #polina{
+      margin-right:19em;
+    }
     #port {
         padding: 4em 0 0 0;
     }
@@ -1363,11 +1366,15 @@ span.border.two:after {
         line-height: 2em;
         margin-top: 0.5em;
     }
+    #polina{
+      margin-right:19em;
+    }
 }
 @media(max-width:1024px) {
     .about-left {
         padding: 4em 0 3.5em 0;
     }
+
     .about-left-grid {
         width: 70%;
         float: right;

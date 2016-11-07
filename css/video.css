@@ -16,8 +16,20 @@ video {
 }
 #polina {
     color: black;
-    position: inherit;
+    position: absolute;
     padding: 2rem;
     margin: auto;
-    float: right;
+    float: none;
+}
+
+@media(min-width:1920px) {
+
+  #polina {
+      color: black;
+      position: absolute;
+      padding: 2rem;
+      margin-left: 18em;
+      float: none;
+  }
+
 }
