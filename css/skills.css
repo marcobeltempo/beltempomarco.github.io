@@ -2,18 +2,18 @@
 	/*.tabs {
 		margin: 30px 0 0 0;
 	}
-	
+
 		.sap_tabs {
 		clear: both;
 	}
-	
+
 	.resp-tabs-list {
 		list-style: none;
 		text-align: center;
 		width: 99%;
 		margin: 0 auto 5px;
 	}
-	
+
 		.resp-tab-item {
 		cursor: pointer;
 		display: inline-block;
@@ -29,24 +29,24 @@
 		padding: 10px 0;
 		border-bottom: 1px ridge #777;
 	}
-	
+
 	.resp-tab-item1 span {
 		font-family: 'Montserrat', sans-serif;
 		font-size: 16px;
 		letter-spacing: 1px;
 		color: #333;
 	}
-	
+
 		.resp-tabs-container1 {
 		padding: 0px;
 		clear: left;
 	}
-	
-	
+
+
 .wthreeskills {
 	padding: 100px 0;
 	background-color: #F5F5F5;
-} 
+}
 
 
 
@@ -72,7 +72,7 @@
 		margin-top: 2%;
 	}
 
-	
+
 
 	.resp-tab-active {
 		text-shadow: none;
@@ -133,19 +133,19 @@
 .traits{
 	margin-left: -1em;
 	position:parent;
-	
+
 }
 
 .traitList {
-	
+
 	font-size:18px;
 	color:white;
 	font-weight:bold;
 	list-style: disc;
 	text-align:left;
-	
+	margin: 20px 0;
 }
-	
+
 	.bar_group {
 	    position: relative;
 	    z-index: 0;
