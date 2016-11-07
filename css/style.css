@@ -30,7 +30,6 @@ h6 {
 
 #home {
    /* background: url(../images/back2.jpg) no-repeat center top; */
-	background-color:
 	background: -moz-linear-gradient(270deg, rgba(42,56,74,1) 0%, rgba(42,56,74,1) 20%, rgba(244,244,244,1) 100%); /* ff3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(42,56,74,1)), color-stop(20%, rgba(42,56,74,1)), color-stop(100%, rgba(244,244,244,1))); /* safari4+,chrome */
 	background: -webkit-linear-gradient(270deg, rgba(42,56,74,1) 0%, rgba(42,56,74,1) 20%, rgba(244,244,244,1) 100%); /* safari5.1+,chrome10+ */
@@ -248,16 +247,19 @@ ul.social-icons {
     padding: 1.3em 0;
     text-align: center;
     margin: 0;
+border:none;
 }
 .social-icons li {
     display: inline-block;
-
+border:none;
 }
 
 a.btn.glyphicon.glyphicon-envelope {
     margin-left: -.5em;
     font-size: 1.6em;
+    -webkit-transform: rotate(-45deg);
 }
+
 .social-icons li a {
     display: block;
     transition: .5s all;
@@ -269,6 +271,7 @@ a.btn.glyphicon.glyphicon-envelope {
     /* font-size: 110%; */
     display: block;
     /* width: 32px; */
+
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -1169,6 +1172,7 @@ ul.social-icons.two {
     outline: none;
     border: 2px solid #00a78e;
 }
+
 .mail_right textarea {
     height: 200px;
     resize: none;
@@ -1221,14 +1225,16 @@ span.border.two:after {
 /*-- footer --*/
 
 .footer {
-    background: url(../images/contact.jpeg) no-repeat center top;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
-    min-height: 650px;
-    padding: 5em 0 0em 0;
+        min-height: 650px;
+        padding: 5em 0 0em 0;
+        margin-right: 20%;
+
+    }
 }
 .footer_top ul li {
     font-size: 22px;
@@ -1252,10 +1258,11 @@ span.border.two:after {
 .copy_right p {
     color: #fff;
     font-size: 0.9em;
-    line-height: 1.9em;
-    margin: 1em 0;
+    line-height: 5em;
+
 }
 .copy_right p a {
+
     color: #00a78e;
     text-decoration: none;
 }
@@ -1919,6 +1926,7 @@ span.border.two:after {
         background: none;
         padding: 7px 10px;
         margin-bottom: 6px;
+
     }
     .team-gd {
         padding: 0;

@@ -14,7 +14,6 @@
         <!--[if (gt IE 9)|!(IE)]><!-->
         <html class="compatible">
           <!--<![endif]-->
-          <html>
             <head>
               <title>BeltempoMar.co | Home</title>
 
@@ -34,7 +33,9 @@
               <!-- Custom Theme files -->
               <link href="css/style.css" rel='stylesheet' type='text/css' />
               <link href="css/skills.css" rel='stylesheet' type='text/css' />
-			  <link href="css/iFrame.css" rel='stylesheet' type='text/css' />
+			        <link href="css/iFrame.css" rel='stylesheet' type='text/css' />
+              <link href="css/video.css" rel='stylesheet' type='text/css' />
+
               <!-- Custom Theme files -->
               <meta name="viewport" content="width=device-width, initial-scale=1">
               <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -44,7 +45,7 @@
               <link href='//fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
               <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
               <!-- webfonts -->
-              <!-- start-smoth-scrolling---->
+              <!-- start-smoth-scrolling -->
               <script type="text/javascript" src="js/move-top.js"></script>
 			  <script type="text/javascript" src="js/iFrame.js"></script>
               <script type="text/javascript" src="js/easing.js"></script>
@@ -56,7 +57,6 @@
                 	});
                 });
               </script>
-              <!-- start-smoth-scrolling---->
             </head>
             <body>
               <!-- container -->
@@ -66,11 +66,11 @@
                   <!-- top-hedader -->
                   <div class="top-header">
                     <!-- /logo -->
-                    <!--top-nav---->
+                    <!-- top-nav -->
                     <div class="top-nav">
                       <div class="navigation">
                         <div class="logo">
-                          <h1><a href="index.html"><span><img src="images/logo.png"></span></a></h1>
+                          <h1><a href="index.html"><span><img src="images/logo.png" alt="BeltempoMar.co Logo"></span></a></h1>
                         </div>
                         <div class="navigation-right">
                           <span class="menu"><img src="images/menu.png" alt=" " /></span>
@@ -230,16 +230,17 @@
                       <div class="col-xs-8 wthree_about_right_grid_right">
                         <h4>Traits</h4>
 						<ul class="traits">
-						<br>
-                        <li class="traitList">Technical Competency </li><br>
-						<li class="traitList">Problem-Solving Skills</li><br>
-						<li class="traitList">Communication Skills</li><br>
-            <li class="traitList">Team Player</li><br>
-						<li class="traitList">Innovative</li><br>
-						<li class="traitList">Adaptable</li><br>
+
+            <li class="traitList">Technical Competency </li>
+						<li class="traitList">Problem-Solving Skills</li>
+						<li class="traitList">Communication Skills</li>
+            <li class="traitList">Team Player</li>
+						<li class="traitList">Innovative</li>
+						<li class="traitList">Adaptable</li>
+          </ul>
                       </div>
                       <div class="clearfix"> </div>
-                    </div>
+
                     <div class="col-md-6 wthree_about_right_grid">
                       <div class="col-xs-4 wthree_about_right_grid_left">
                         <div class="hvr-rectangle-in">
@@ -256,11 +257,13 @@
                           <div class='bar_group__bar thin' label='HTML/CSS' show_values='true' tooltip='true' value='76'></div>
                         </div>
                         <div class="clearfix"> </div>
-                        </div
+                      </div>
                         <div class="clearfix"> </div>
                       </div>
                     </div>
                   </div>
+                    </div>
+                      </div>
                   <!-- Progressive-Bars-JavaScript -->
                   <!--work-experience-->
                   <div id="work" class="work">
@@ -278,9 +281,10 @@
                             <li>2013/15 </li>
                             <li>2006/14</li>
                             <li>2011</li>
-                            <div class="clearfix"></div>
+
                           </ul>
                         </div>
+                              <div class="clearfix"></div>
                         <ul class="col-md-6 timeline">
                           <li>
                             <div class="timeline-badge info"><i class="glyphicon glyphicon-briefcase"></i></div>
@@ -475,64 +479,125 @@
 
 					<!--iFrame -->
 					<div class="wrapper">
-    <div class="popup" display:block>
-        <iframe src="" >
+    <div class="popup" style="display:block">
+        <iframe src="">
             <p>Your browser does not support iframes.</p>
         </iframe>
-<ahref="#port"><button  class="iframeClose" value="Close"> Close</button></a>
+<a href="#port"><button  class="iframeClose" value="Close"> Close</button></a>
 
-    </div>
 </div>
      </div>
                     <!-- //portfolio -->
 			<!--//iFrame -->
-                    <!-- /header -->
-                    <div class="footer" id="contact">
-                      <div class="container">
-                        <div class="service-head one text-center">
-                          <h4>CONTACT</h4>
-                          <h3>GET <span>IN TOUCH WITH ME</span></h3>
-                          <span class="border two"></span>
-                        </div>
-                        <div class="mail_us">
-                          <div class="col-md-6 mail_left">
-                            <div class="contact-grid1-left">
-                              <div class="contact-grid1-left1">
-                                <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-                                <h4>Contact By Email</h4>
-                                <ul>
-                                  <li>Mail: <a href="mailto:me@beltempomar.co">me@beltempomar.co</a></li>
+
+                          <script>
+                          var vid = document.getElementById("bgvid");
+                          var pauseButton = document.querySelector("#polina button");
+
+                          function vidFade() {
+                            vid.classList.add("stopfade");
+                          }
+
+                          vid.addEventListener('ended', function()
+                          {
+                          // only functional if "loop" is removed
+                          vid.pause();
+                          // to capture IE10
+                          vidFade();
+                          });
+
+
+                          </script>
+                          <video poster="images/Snapshots/Inbox-Zero.jpg" id="bgvid" playsinline autoplay muted loop>
+                            <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+                            <source src="videos/MP4/Inbox-Zero.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                            <source src="videos/WEBM/Inbox-Zero.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                          </video>
+                          <div id="polina">
+                          <div class="footer" id="contact">
+                            <div class="container">
+                              <div class="service-head one text-center">
+                                <h4>CONTACT</h4>
+                                <h3>GET <span>IN TOUCH WITH ME</span></h3>
+                                <span class="border two"></span>
+                              </div>
+                              <div class="mail_us">
+                                <div class="col-md-6 mail_left">
+                                  <div class="contact-grid1-left">
+                                    <div class="contact-grid1-left1">
+                                      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                      <h4>Contact By Email</h4>
+                                      <ul>
+                                        <li>Mail: <a href="mailto:me@beltempomar.co">me@beltempomar.co</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-md-6 mail_right">
+
+                                  <form method="post"  action="mailto:me@beltempomar.co" enctype="text/plain">
+                                    <input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required>
+                                    <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required>
+                                    <input type="text" name="Mobile number" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required>
+                                    <textarea name="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required>Message...</textarea>
+                                    <input type="submit" value="Send">
+                                  </form>
+
+                                </div>
+                              </div>
+                              <div class="copy_right text-center">
+                                <p>2016 BeltempoMar.co | All rights reserved</p>
+                                <!-- Social Icons -->
+                                <ul class="social-icons">
+                                  <li><a href="https://github.com/marcoB13" class="btn btn-social-icon btn-github" target="_blank"><i class="fa fa-github"> </i> </a> </li>
+                                  <li><a href="https://ca.linkedin.com/in/marco-beltempo-a9154458" class="btn btn-social-icon btn-linkedin" target="_blank"><i class="fa fa-linkedin"> </i> </a> </li>
+                                  <li><a href="mailto:me@beltempomar.co"  class="btn glyphicon glyphicon-envelope"></a></li>
                                 </ul>
                               </div>
                             </div>
-                            <div class="clearfix"> </div>
                           </div>
-                          <div class="col-md-6 mail_right">
-
-                            <form method="post"  action="mailto:me@beltempomar.co" enctype="text/plain">
-                              <input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-                              <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-                              <input type="text" name="Mobile number" value="Mobile number" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Mobile number';}" required="">
-                              <textarea name="Message..." onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-                              <input type="submit" value="Send">
-                            </form>
 
                           </div>
-                          <div class="clearfix"></div>
-                        </div>
-                        <div class="copy_right text-center">
-                          <p>2016 BeltempoMar.co | All rights reserved</p>
-                          <!-- Social Icons -->
-                          <ul class="social-icons">
-                            <li><a href="https://github.com/marcoB13" class="btn btn-social-icon btn-github" target="_blank"><i class="fa fa-github"> </i> </a> </li>
-                            <li><a href="https://ca.linkedin.com/in/marco-beltempo-a9154458" class="btn btn-social-icon btn-linkedin" target="_blank"><i class="fa fa-linkedin"> </i> </a> </li>
-                            <li><a href="mailto:me@beltempomar.co"  class="btn glyphicon glyphicon-envelope" aria-hidden="true"></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
+                          <div>
+
+                          </div>
+
                     <!-- //footer -->
                     <!-- /container -->
+
+
+                    <!-- //portfolio -->
+
+                    <a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+                    <!--start-smooth-scrolling-->
+                    <script type="text/javascript">
+                      $(document).ready(function() {
+                        /*
+                        var defaults = {
+                            containerID: 'toTop', // fading element id
+                          containerHoverID: 'toTopHover', // fading element hover id
+                          scrollSpeed: 1200,
+                          easingType: 'linear'
+                          };
+                        */
+
+                        $().UItoTop({ easingType: 'easeOutQuart' });
+
+                      });
+                    </script>
+                    <!--end-smooth-scrolling-->
+                    <!-- //for bootstrap working -->
+                    <script src="js/bootstrap.js"></script>
+                    <!-- Progressive-Bars-JavaScript -->
+                    <script src="js/bars.js"></script>
+
+
+
+
+
+
+
+
 
 
                   </div>
@@ -540,31 +605,7 @@
 
 
 
-              <!-- //portfolio -->
 
 
-
-              <a href="#home" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-              <!--start-smooth-scrolling-->
-              <script type="text/javascript">
-                $(document).ready(function() {
-                	/*
-                	var defaults = {
-                 			containerID: 'toTop', // fading element id
-                		containerHoverID: 'toTopHover', // fading element hover id
-                		scrollSpeed: 1200,
-                		easingType: 'linear'
-                		};
-                	*/
-
-                	$().UItoTop({ easingType: 'easeOutQuart' });
-
-                });
-              </script>
-              <!--end-smooth-scrolling-->
-              <!-- //for bootstrap working -->
-              <script src="js/bootstrap.js"></script>
-              <!-- Progressive-Bars-JavaScript -->
-              <script src="js/bars.js"></script>
             </body>
           </html>
