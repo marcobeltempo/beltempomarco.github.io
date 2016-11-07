@@ -62,10 +62,10 @@ h6 {
 }
 .logo span {
     border: 7px solid #00a78e;
-    padding: 0px 14px;
+    padding: 10px 10px;
     font-size: 1.2em;
-    color: #fff;
 }
+
 .logo {
     float: left;
 }
@@ -129,7 +129,7 @@ span.menu {
     background: linear-gradient(0deg, rgba(226,228,229,1) 0%, rgba(70,82,98,1) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#465262', endColorstr='#e2e4e5',GradientType=0 ); /* ie6-9 */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#465262', endColorstr='#e2e4e5',GradientType=0 ); /* ie6-9 */
-    
+
     margin-top: 4em;
 }
 .header-left {
@@ -1404,7 +1404,7 @@ span.border.two:after {
     background: linear-gradient(0deg, rgba(226,228,229,1) 0%, rgba(70,82,98,1) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#465262', endColorstr='#e2e4e5',GradientType=0 ); /* ie6-9 */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#465262', endColorstr='#e2e4e5',GradientType=0 ); /* ie6-9 */
-    
+
 	margin-top: 3em;
     }
     ul.address li ul.address-text li {
