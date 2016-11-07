@@ -12,20 +12,22 @@ video {
     transition: 1s opacity;
 }
 .stopfade {
-   opacity: .5;
+    opacity: .5;
 }
-
 #polina {
-
-  color: black;
-  position: inherit;
-  padding: 2rem;
-  margin:auto;
-  float: right;
+    color: black;
+    position: inherit;
+    padding: 2rem;
+    margin: auto;
+    float: right;
 }
-
 @media screen and (max-width: 500px) {
-  div{width:70%;}
+    div {
+        width: 70%;
+    }
 }
-@media screen and (max-device-width: 800px) {  #bgvid { display: none; }
+@media screen and (max-device-width: 800px) {
+    #bgvid {
+        display: none;
+    }
 }
