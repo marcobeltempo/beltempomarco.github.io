@@ -262,6 +262,14 @@ ul.address-text b {
     background-color: rgba(68, 68, 68, 0);
     text-align: center;
     margin-right: 1.7em;
+    border: none;
+}
+
+
+.btn:hover {
+    font-size: 150%;
+    background-color: rgba(68, 68, 68, 0);
+    color: #060000;
 }
 ul.social-icons {
     display: block;
@@ -275,16 +283,20 @@ ul.social-icons {
     display: inline-block;
     border: none;
 }
-a.btn.glyphicon.glyphicon-envelope {
-    margin-left: -.5em;
+
+  a.btn.glyphicon.glyphicon-envelope {
+    margin-left: -0.3em;
     font-size: 1.6em;
     -webkit-transform: rotate(-45deg);
+    display: block;
 }
 .social-icons li a {
-    display: block;
+    display: table-cell;
     transition: .5s all;
     -moz-transition: .5s all;
-}
+    margin: auto;
+  }
+
 .social-icons li a:before {
     color: #fdfffe;
     /* font-size: 110%; */
