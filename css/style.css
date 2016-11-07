@@ -1254,7 +1254,7 @@ span.border.two:after {
 }
 /*-- footer --*/
 
-.footer {
+.footer #polina {
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1287,7 +1287,7 @@ span.border.two:after {
 .copy_right p {
     color: #fff;
     font-size: 0.9em;
-    line-height: 5em;
+    line-height: 1.5em;
 }
 .copy_right p a {
     color: #00a78e;
@@ -1331,7 +1331,7 @@ span.border.two:after {
     .blog {
         padding: 4em 0;
     }
-    .footer {
+     .footer #polina   {
         min-height: 650px;
         padding: 4em 0 0em 0;
     }
@@ -1386,7 +1386,7 @@ span.border.two:after {
     #port {
         padding: 3em 0 0 0;
     }
-    .footer {
+     .footer #polina  {
         min-height: 587px;
         padding: 3em 0 0em 0;
     }
@@ -2039,6 +2039,8 @@ span.border.two:after {
     }
 }
 @media(max-width:320px) {
+
+
     .resp-tab-item {
         margin: 0 0px 4px 0;
         padding: 6px 9px;
