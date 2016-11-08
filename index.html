@@ -52,6 +52,7 @@
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/iFrame.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/aboutVideo.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event) {
@@ -76,7 +77,7 @@
                 <div class="top-nav">
                     <div class="navigation">
                         <div class="logo">
-                            <h1><a href="index.html"><span><img src="images/logo.png" alt="BeltempoMar.co Logo"></span></a></h1>
+                            <h1><a href="index.html"><span><img src="images/logo.png" alt="BeltempoMar.co Logo"  height="80" width="80"></span></a></h1>
                         </div>
                         <div class="navigation-right">
                             <span class="menu"><img src="images/menu.png" alt=" " /></span>
@@ -109,57 +110,58 @@
                         </div>
                         <div class="clearfix"></div>
                     </div>
-                    <!-- /top-hedader -->
                 </div>
-                <div class="banner-info">
-                    <div class="col-md-7 header-right">
-                        <h1>Hi !</h1>
-                        <h6>Computer Programming Student</h6>
-                        <ul class="address">
-                            <li>
-                                <ul class="address-text">
-                                    <li><b>NAME</b>
-                                    </li>
-                                    <li>Marco Beltempo</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="address-text">
-                                    <li><b>D.O.B</b>
-                                    </li>
-                                    <li>4-05-1991</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="address-text">
-                                    <li><b>ADDRESS </b>
-                                    </li>
-                                    <li>Toronto, Ontario</li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="address-text">
-                                    <li><b>E-MAIL </b>
-                                    </li>
-                                    <li><a href="mailto:me@beltempomar.ca"> me@beltempomar.co</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul class="address-text">
-                                    <li><b>WEBSITE </b>
-                                    </li>
-                                    <li><a href="http://beltempomar.co">www.beltempomar.co</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-5 header-left">
-                        <img src="images/avatarMB.png" alt="">
-                    </div>
-                    <div class="clearfix"> </div>
+                <!-- /top-nav -->
+            </div>
+            <!-- /top-hedader -->
+            <div class="banner-info">
+                <div class="col-md-7 header-right">
+                    <h1>Hi !</h1>
+                    <h6>Computer Programming Student</h6>
+                    <ul class="address">
+                        <li>
+                            <ul class="address-text">
+                                <li><b>NAME</b>
+                                </li>
+                                <li>Marco Beltempo</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>D.O.B</b>
+                                </li>
+                                <li>4-05-1991</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>ADDRESS </b>
+                                </li>
+                                <li>Toronto, Ontario</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>E-MAIL </b>
+                                </li>
+                                <li><a href="mailto:me@beltempomar.ca"> me@beltempomar.co</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="address-text">
+                                <li><b>WEBSITE </b>
+                                </li>
+                                <li><a href="http://beltempomar.co">www.beltempomar.co</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
+                <div class="col-md-5 header-left">
+                    <img src="images/avatarMB.png" alt="">
+                </div>
+                <div class="clearfix"> </div>
             </div>
         </div>
     </div>
@@ -195,37 +197,54 @@
                 </div>
             </div>
         </div>
+
+
         <div class="col-md-6 about-right">
+
+
+            <div class="videoContainer">
+                <video class="aboutVid" autoplay loop>
+                    <source src="videos/MP4/Spacious.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        <source src="videos/MP4/Spacious.webm" type='video/webm; codecs="vp8, vorbis"' /> Video not supported.
+                </video>
+            </div>
+
+
         </div>
-        <div class="clearfix"> </div>
-        <link href="css/owl.carousel.css" rel="stylesheet">
-        <script src="js/owl.carousel.js"></script>
-        <script>
-            $(document).ready(function() {
-                $("#owl-demo1").owlCarousel({
-                    items: 1,
-                    lazyLoad: false,
-                    autoPlay: true,
-                    navigation: false,
-                    navigationText: false,
-                    pagination: true,
-                });
-            });
-        </script>
-        <!-- Feedback -->
-        <script>
-            $(document).ready(function() {
-                $("#owl-demo3").owlCarousel({
-                    items: 1,
-                    lazyLoad: false,
-                    autoPlay: true,
-                    navigation: false,
-                    navigationText: true,
-                    pagination: true,
-                });
-            });
-        </script>
     </div>
+
+
+
+    <!--  /END About Video/ -->
+    <!-- /END About/ -->
+    <div class="clearfix"> </div>
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <script src="js/owl.carousel.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#owl-demo1").owlCarousel({
+                items: 1,
+                lazyLoad: false,
+                autoPlay: true,
+                navigation: false,
+                navigationText: false,
+                pagination: true,
+            });
+        });
+    </script>
+    <!-- Feedback -->
+    <script>
+        $(document).ready(function() {
+            $("#owl-demo3").owlCarousel({
+                items: 1,
+                lazyLoad: false,
+                autoPlay: true,
+                navigation: false,
+                navigationText: true,
+                pagination: true,
+            });
+        });
+    </script>
     <!-- /about -->
     <!-- services -->
     <script src="js/bars.js"></script>
@@ -234,7 +253,7 @@
             <div class="service-head one text-center ">
                 <h4>WHAT I CAN DO</h4>
                 <h3>MY <span>SKILLS</span></h3>
-                <span class="border two"></span>
+                <span class="border two" id="skillsBreak"></span>
             </div>
             <!-- services-grids -->
             <div class="wthree_about_right_grids w3l-agile">
@@ -522,10 +541,8 @@
         <!--//iFrame -->
 
     </div>
-    <video poster="images/Snapshots/Inbox-Zero.jpg" id="bgvid" playsinline autoplay muted loop>
-        <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-        <source src="videos/MP4/Inbox-Zero.mp4" type="video/mp4" /> Your browser does not support the video tag. I suggest you upgrade your browser.
-        <source src="videos/WEBM/Inbox-Zero.webm" type="video/webm" /> Your browser does not support the video tag. I suggest you upgrade your browser.
+    <video poster="images/Snapshots/Inbox-Zero.jpg" id="bgvid" autoplay loop>
+        <source src="videos/MP4/Inbox-Zero.mp4" type="video/mp4" /> Video not supported.
     </video>
 
     <div id="polina">

@@ -1,235 +1,99 @@
-
-	/*.tabs {
-		margin: 30px 0 0 0;
-	}
-
-		.sap_tabs {
-		clear: both;
-	}
-
-	.resp-tabs-list {
-		list-style: none;
-		text-align: center;
-		width: 99%;
-		margin: 0 auto 5px;
-	}
-
-		.resp-tab-item {
-		cursor: pointer;
-		display: inline-block;
-		margin: 0;
-		outline: none;
-		-webkit-transition: all 0.3s ease-out;
-		-moz-transition: all 0.3s ease-out;
-		-ms-transition: all 0.3s ease-out;
-		-o-transition: all 0.3s ease-out;
-		transition: all 0.3s ease-out;
-		width: 33.3%;
-		float: left;
-		padding: 10px 0;
-		border-bottom: 1px ridge #777;
-	}
-
-	.resp-tab-item1 span {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 16px;
-		letter-spacing: 1px;
-		color: #333;
-	}
-
-		.resp-tabs-container1 {
-		padding: 0px;
-		clear: left;
-	}
-
-
-.wthreeskills {
-	padding: 100px 0;
-	background-color: #F5F5F5;
+.traits {
+    margin-left: -1em;
+    position: parent;
 }
-
-
-
-.wthreeskills-grid-1 h4 {
-	width: 40%;
-}
-
-.wthreeskills-grid-2 h4 {
-	width: 33%;
-}
-
-
-
-
-
-
-	.tab_box {
-		background: #fd926d;
-		padding: 2em;
-	}
-
-	.top1 {
-		margin-top: 2%;
-	}
-
-
-
-	.resp-tab-active {
-		text-shadow: none;
-		background-color: #607D8B;
-		border-bottom: 1px solid #607d8b;
-	}
-
-	.resp-tab-active span {
-		color: #FFF;
-	}
-
-
-
-	h2.resp-accordion {
-		cursor: pointer;
-		padding: 5px;
-		display: none;
-	}
-
-	.resp-tab-content1 {
-		display: none;
-		padding-top: 40px;
-	}
-
-	.resp-content-active, .resp-accordion-active {
-		display: block;
-	}
-
-	.resp-tab-item label{
-		margin-right:8px;
-	}
-
-	.resp-tab-content1 p {
-		line-height: 30px;
-		font-size: 15px;
-		padding: 0 5px;
-	}
-
-	.w3lsstatsaits-info {
-		text-align: center;
-		margin-top: 20px;
-	}
-
-	.w3lsstatsaitsstats {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 35px;
-		font-weight: 700;
-		margin-bottom: 10px;
-	}
-
-	.w3lsstatsaits-info p {
-		font-family: 'Montserrat', sans-serif;
-		font-size: 20px;
-	}
-
-
-*/
-.traits{
-	margin-left: -1em;
-	position:parent;
-
-}
-
 .traitList {
-
-	font-size:18px;
-	color:white;
-	font-weight:bold;
-	list-style: disc;
-	text-align:left;
-	margin: 20px 0;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    list-style: disc;
+    text-align: left;
+    margin: 20px 0;
 }
-
-	.bar_group {
-	    position: relative;
-	    z-index: 0;
-	    padding: 0 5px;
-	}
-	.bar_group__bar.thin::before {
-	    display: block;
-	    content: '';
-	    position: absolute;
-	    z-index: -1;
-	    width: 100%;
-	    height: 15px;
-	    -webkit-border-radius: 2px;
-	    border-radius: 2px;
-	    -moz-border-radius: 2px;
-	    background: #E4E4E4;
-	}
-	.bar_group__bar.thin {
-	    width: 0%;
-	    height: 15px;
-	    -webkit-border-radius: 2px;
-	    border-radius: 2px;
-	    -moz-border-radius: 2px;
-	    background: rgb(255,255,153);
-	    margin-bottom: 10px;
-	    -webkit-transition: width 1s;
-	    transition: width 1s;
-	    -moz-transition: width 1s;
-	    margin-bottom: 2em !important;
-	}
-	.bar_label_max {
-	    display: none;
-	}
-	.bar_label_min {
-	    display: none;
-	}
-	.b_tooltip {
-	    -webkit-transition: all 1s;
-	    transition: all 1s;
-	    -moz-transition: all 1s;
-	    position: relative;
-	    float: left;
-	    left: 100%;
-	    padding: 4px 10px 7px 10px;
-	    background-color: rgba(255, 255, 255, 0.15);
-	    -webkit-transform: translateX(-50%) translateY(-30px);
-	    -ms-transform: translateX(-50%) translateY(-30px);
-	    transform: translateX(-50%) translateY(-30px);
-	    -moz-transform: translateX(-50%) translateY(-30px);
-	    -o-transform: translateX(-50%) translateY(-30px);
-	    -webkit-border-radius: 2px;
-	    border-radius: 2px;
-	    -moz-border-radius: 2px;
-	    line-height: 11px;
-	}
-	.b_tooltip span {
-	    color: #fff;
-	    font-size: 0.8em;
-	}
-	.b_tooltip--tri {
-	    width: 0;
-	    height: 0;
-	    position: absolute;
-	    content: '';
-	    bottom: -5px;
-	    left: 0;
-	    right: 0;
-	    margin: auto;
-	    display: block;
-	    border-style: solid;
-	    border-width: 5px 5px 0 5px;
-	    border-color: #000 transparent transparent transparent;
-	}
-	p.b_label {
-	    color: whitesmoke;
-	    margin-bottom: .5em;
-	    font-size: 1.1em;
-	}
-	.wthreeskills-grid h4 {
-	    font-size: 25px;
-	    font-weight: 700;
-	    text-align: left;
-	    padding-bottom: 10px;
-	    border-bottom: 3px solid #000;
-	    margin-bottom: 25px;
-	    width: 27%;
-	}
+.bar_group {
+    position: relative;
+    z-index: 0;
+    padding: 0 5px;
+}
+.bar_group__bar.thin::before {
+    display: block;
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 15px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    background: #E4E4E4;
+}
+.bar_group__bar.thin {
+    width: 0%;
+    height: 15px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    background: rgb(255, 255, 153);
+    margin-bottom: 10px;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    -moz-transition: width 1s;
+    margin-bottom: 2em !important;
+}
+.bar_label_max {
+    display: none;
+}
+.bar_label_min {
+    display: none;
+}
+.b_tooltip {
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    position: relative;
+    float: left;
+    left: 100%;
+    padding: 4px 10px 7px 10px;
+    background-color: rgba(255, 255, 255, 0.15);
+    -webkit-transform: translateX(-50%) translateY(-30px);
+    -ms-transform: translateX(-50%) translateY(-30px);
+    transform: translateX(-50%) translateY(-30px);
+    -moz-transform: translateX(-50%) translateY(-30px);
+    -o-transform: translateX(-50%) translateY(-30px);
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    line-height: 11px;
+}
+.b_tooltip span {
+    color: #fff;
+    font-size: 0.8em;
+}
+.b_tooltip--tri {
+    width: 0;
+    height: 0;
+    position: absolute;
+    content: '';
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+}
+p.b_label {
+    color: whitesmoke;
+    margin-bottom: .5em;
+    font-size: 1.1em;
+}
+.wthreeskills-grid h4 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #000;
+    margin-bottom: 25px;
+    width: 27%;
+}
