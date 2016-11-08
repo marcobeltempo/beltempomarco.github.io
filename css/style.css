@@ -1027,8 +1027,7 @@ div#portfolioModal10 {
     background: rgba(0, 0, 0, 0.55);
 }
 .team-gd img {
-    width: 60%;
-    border: 2px solid rgb(238, 238, 239);
+    width: 35%;
 }
 /*-- portfolio --*/
 
@@ -1128,8 +1127,10 @@ div#portfolioModal10 {
     transform: rotate(90deg);
 }
 .team-gd {
-    padding: 0;
-    position: relative;
+	/* padding: -5em; */
+	position: initial;
+	margin-right: -6em;
+  float:left;
 }
 .bottom-top {
     margin: 0 auto;
